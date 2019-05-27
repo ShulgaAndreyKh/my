@@ -37,20 +37,23 @@ $arr = $pdo->query("SELECT * FROM users")->fetchAll();
 
 		addMrker({
 			coordinates: {lat: 49.991015, lng: 36.229191},
-			infoW: "<div style='float:left'><img src=<?php echo $arr[1]['path']?>></div>" +
-				"<div style='float:right; padding: 10px;'><h6><?php echo $arr[1]['name'] ?></h6></div>"
+			infoW: "<div style='float:left'><img src=<?php echo $arr[0]['path']?>></div>" +
+				"<div style='float:right; padding: 10px;'><h6><?php echo $arr[0]['name'] ?></h6>" +
+				"<h6><?php echo $arr[0]['address'] ?></h6></div>"
 		});
 
 		addMrker({
 			coordinates: {lat: 49.992609, lng: 36.230682},
-			infoW: "<div style='float:left'><img src=<?php echo $arr[0]['path']?>></div>" +
-				"<div style='float:right; padding: 10px;'><h6><?php echo $arr[0]['name'] ?></h6></div>"
+			infoW: "<div style='float:left'><img src=<?php echo $arr[1]['path']?>></div>" +
+				"<div style='float:right; padding: 10px;'><h6><?php echo $arr[1]['name'] ?></h6></div>" +
+				"<h6><?php echo $arr[1]['address'] ?></h6></div>"
 		});
 
 		addMrker({
 			coordinates: {lat: 49.994609, lng: 36.230682},
 			infoW: "<div style='float:left'><img src=<?php echo $arr[2]['path']?>></div>" +
-				"<div style='float:right; padding: 10px;'><h6><?php echo $arr[2]['name'] ?></h6></div>"
+				"<div style='float:right; padding: 10px;'><h6><?php echo $arr[2]['name'] ?></h6></div>" +
+				"<h6><?php echo $arr[2]['address'] ?></h6></div>"
 		});
 
 
