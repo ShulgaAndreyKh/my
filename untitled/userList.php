@@ -26,7 +26,6 @@
 		require_once 'conn.php';
 		$arr = $pdo->query("SELECT * FROM users")->fetchAll();
 		for($q = 0; $q < count($arr); $q++) {
-
 			?>
 
 			<tr>
@@ -52,63 +51,7 @@
 			<?php
 		}
 		echo '</table>';
-
 		?>
 
-<!--		<div id="confirm" class="modal hide fade">-->
-<!--			<div class="modal-body">-->
-<!--				Are you sure?-->
-<!--			</div>-->
-<!--			<div class="modal-footer">-->
-<!--				<button type="button" data-dismiss="modal" class="btn btn-primary" id="delete" onclick="">Delete</button>-->
-<!--				<button type="button" data-dismiss="modal" class="btn">Cancel</button>-->
-<!--			</div>-->
-<!--		</div>-->
-
-		<script type="text/javascript">
-
-			// $(document).ready(function () {
-			// 	$('#edit').bind('click', function (e) {
-			// 		var id = e;
-			// 		$.ajax({
-			// 			url: 'formEdit.php',
-			// 			type: 'POST',
-			// 			data: ({id : id})
-			// 			datatype: 'html',
-			// 			beforeSend: funcBefore
-			//
-			// 		})
-			// 	})
-			// })
-			//
-			// var q = document.getElementById('delete');
-			//
-			// function funcBefore() {
-			//
-			// 	$('.btn-ok').click(function() {
-			// 		/* Add any code here to delete the user */
-			// 		$('.modal').modal('hide');
-			// 	});
-			// }
-
-			// $('#delete').on('click', function(e) {
-			// 	var $form = $(this).closest('form');
-			// 	e.preventDefault();
-			// 	$('#confirm').modal({
-			// 		backdrop: 'static',
-			// 		keyboard: false
-			// 	})
-			// 		.one('click', '#delete', function(e) {
-			// 			$form.trigger('submit');
-			// 		});
-			// });
-
-
-
-		</script>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/main.js"></script>
 </body>
 </html>
